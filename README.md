@@ -19,6 +19,7 @@ ERD диаграмма базы данных, где таблица Gender - "С
 
 
 SELECT count(*) FROM "Staff" WHERE birth < CURRENT_DATE - 10957
+
 (SELECT count(*) FROM "Staff" WHERE "Staff".birth < CURRENT_DATE - date('1992.03.27'))
 
 
