@@ -35,5 +35,5 @@ WHERE date_part('year', CURRENT_DATE) = date_part('year', CURRENT_DATE + interva
    AND date_part('doy', birth)
        BETWEEN date_part('doy', CURRENT_DATE) AND date_part('doy', CURRENT_DATE + interval '10days')
        
- # CREATE scripts для таблиц находится в DBspripts.txt
+ # CREATE scripts для таблиц находится в DBscripts.txt
 
