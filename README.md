@@ -18,10 +18,7 @@ ERD диаграмма базы данных, где таблица Gender - "С
 1. Количество мужчин, старше 30 лет, не имеющих высшее образование
 
 
-SELECT count(*) FROM "Staff" WHERE birth < CURRENT_DATE - 10957
 
-P.S Прочитал документацию операторов, и лишь date - integer = date. Пришлось вычитать дни, т.к. при сравнении birth::date и 
-CURRENT_DATE-date('YYYY.MM.DD') вычитание приводит к integer(выдает дни), и возникает ошибка сравнения birth::date и integer.
 
 
 
