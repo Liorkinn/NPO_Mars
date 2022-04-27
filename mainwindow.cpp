@@ -91,14 +91,4 @@ void MainWindow::on_pushButton_3_clicked()
     }
 }
 
-//date_part('day', birth) = date_part('day', CURRENT_DATE + INTERVAL '1 DAY')
-//AND date_part ('month', birth) = date_part('month', CURRENT_DATE + INTERVAL '1 DAY');
 
-//1, SELECT count(*) FROM "Staff" WHERE gender_id = 1 AND education_id != 2 AND date(birth) < date('01.01.1991')
-
-//2.. SELECT "Staff".name, "Staff".surname, "Staff".patronymic, "Staff".birth, "Gender".gender
-//FROM "Staff"
-//JOIN "Gender" ON "Gender".id = "Staff".gender_id
-//WHERE date_part('year', CURRENT_DATE) = date_part('year', CURRENT_DATE + interval '10days')
- //  AND date_part('doy', birth)
- //      BETWEEN date_part('doy', CURRENT_DATE) AND date_part('doy', CURRENT_DATE + interval '10days')
