@@ -108,6 +108,9 @@ void MainWindow::on_pushButton_3_clicked()
 
 void MainWindow::on_tableView_clicked(const QModelIndex &index)
 {
-    ui->pushButton_3->setEnabled(true);
+    if(ui->comboBox->currentText() == "Staff")
+    {
+         ui->pushButton_3->setEnabled(true);
+    }     
 }
 
