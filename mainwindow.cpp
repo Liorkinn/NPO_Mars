@@ -49,16 +49,16 @@ void MainWindow::on_pushButton_clicked()
         ui->pushButton_3->setEnabled(false);
     }else
     {
-        ui->pushButton_2->setEnabled(true);
-     //   ui->pushButton_3->setEnabled(true);
+        ui->pushButton_2->setEnabled(true);     
     }
+        ui->pushButton_3->setEnabled(false);
 }
 
 void MainWindow::on_pushButton_2_clicked()
 {
     ChangeCheck *insert = new ChangeCheck(ui->tableView, ui->comboBox->currentText());
     insert->show();
-
+    ui->pushButton_3->setEnabled(false);
 }
 
 //DELETE FROM "Staff" WHERE id = 45;
